@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #000;
+      color: #0f0;
+      font-family: 'Courier New', monospace;
+    }
+    .card {
+      background-color: #000;
+      border-color: #0f0;
+    }
+    .btn {
+      background-color: #0f0;
+      color: #000;
+    }
+    footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #000;
+      color: #0f0;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .modal-dialog {
+      max-width: 100%;
+      margin: 0;
+    }
+    .modal-content {
+      background: none;
+      border: none;
+    }
+    .close-button {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      font-size: 2rem;
+      color: #0f0;
+      cursor: pointer;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <h1>Welcome to the Umbral Store</h1>
+        <p>Explore our latest products and hopefully purchase them (im desperate)</p>
+        <div class="card text-center mt-4">
+          <div class="card-body">
+            <h5 class="card-title">Umbral Executor V3</h5>
+            <p class="card-text">The latest version of our Roblox scripting utility.</p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#buyModal">Buy Now</button>
+          </div>
+        </div>
+        <div class="card text-center mt-4">
+          <div class="card-body">
+            <h5 class="card-title">UEX V2</h5>
+            <p class="card-text">Our Roblox aimbot/triggerbot, coming soon.</p>
+            <button class="btn btn-primary" disabled>Coming Soon</button>
+          </div>
+        </div>
+        <div class="card text-left mt-4">
+          <div class="card-body">
+            <h5 class="card-title">Terms of Service</h5>
+            <p class="card-text">
+              By purchasing our products, you agree to the following terms:
+              <ul>
+                <li>The product is provided "as is", without warranty of any kind.</li>
+                <li>We reserve the right to discontinue the product at any time.</li>
+                <li>You will not use the product for any illegal activities.</li>
+                <li>Violation of these terms may result in termination of your access to the product.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© 2022 Hackerish Store. All rights reserved.</p>
+  </footer>
+
+  <!-- Buy Now Modal -->
+  <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <span class="close-button" data-dismiss="modal">&times;</span>
+          <iframe src="https://embed.sellix.io/product/657d0e5e8b6d1" style="border:0; width:100%; height:90vh;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
